@@ -49,11 +49,17 @@ By examining the dataset and attempting to determine if dropping any other non-i
 
 Optimization attempt #1: 2 hidden layers (16, 8 neurons; tanh, relu), 1 output sigmoid layer, 100 epochs
 
-
+![Accuracy2](https://user-images.githubusercontent.com/108022219/198422022-8ecde513-25db-40e4-972b-2daf1c5af15c.png)
 
 Optimization attempt #2: 3 hidden layers (32, 16, 8 neurons; tanh, LeakyReLU, sigmoid), 1 output sigmoid layer, 250 epochs
 
+![Accuracy3](https://user-images.githubusercontent.com/108022219/198422025-c79f9202-90d6-4709-b1f0-68b34021fe0e.png)
+
 Optimization attempt #3: Dropped SPECIAL_CONSIDERATIONS columns, 3 hidden layers (32, 16, 8 neurons; tanh, LeakyReLU, sigmoid), 1 output sigmoid layer, 250 epochs
 
+![Accuracy4](https://user-images.githubusercontent.com/108022219/198422029-2100805f-213c-4e0d-969c-00a3f460d75b.png)
+
 ## Summary 
+
+As you can see in the above figures the accuracy percentages do inch closer with each adjustment. Meeting the goal of at least 75% accuracy was not acheived using this analysis model even with multiple attempts and variations of applying a wide variety of adjustments to the model. Could be that other machine-learning methods, such as random forest, or maybe even more traditional linear regression methods could compare the dependent variable to the additional feature variables individually, or plotted together in layers.
  
