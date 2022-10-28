@@ -44,9 +44,16 @@ This resulted consistently in a 72% accuracy level for the testing data:
 
 ![D1_Accuracy](https://user-images.githubusercontent.com/108022219/198419881-8ce9a006-0eae-4a39-a830-53bfcac23ad4.png)
 
-What steps did you take to try and increase model performance?
+*What steps did you take to try and increase model performance?
 By examining the dataset and attempting to determine if dropping any other non-important variables might lessen the margin of error. Further optimization attempts were made by adding neurons, hidden layers, and altering the activation functions of those layers.  
 
+Optimization attempt #1: 2 hidden layers (16, 8 neurons; tanh, relu), 1 output sigmoid layer, 100 epochs
+
+
+
+Optimization attempt #2: 3 hidden layers (32, 16, 8 neurons; tanh, LeakyReLU, sigmoid), 1 output sigmoid layer, 250 epochs
+
+Optimization attempt #3: Dropped SPECIAL_CONSIDERATIONS columns, 3 hidden layers (32, 16, 8 neurons; tanh, LeakyReLU, sigmoid), 1 output sigmoid layer, 250 epochs
 
 ## Summary 
  
